@@ -81,9 +81,12 @@ Explorando las instalaciones y conociendo a nuestros anfitriones.
 # Inmersión Tecnológica
 ### Clase de informática - Prof. Vito Montanaro
 
-![alt text](./images/IMG_20260113_112640.jpg)
+<div class="mosaico-horizontal">
 
-![alt text](./images/IMG_20260113_093736.jpg)
+![alt text](images/IMG_20260113_093736.jpg)
+![alt text](images/IMG_20260113_112640.jpg)
+
+</div>
 
 ---
 
