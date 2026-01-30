@@ -5,20 +5,27 @@ nav_order: 1
 ---
 
 <style>
-  /* 1. Hacemos transparentes todos los contenedores de Just the Docs */
-  /* Esto elimina el fondo blanco que viene por defecto en la estructura */
+  /* 1. Transparencia Total en todas las capas del tema */
+  /* Forzamos que los contenedores principales no tengan color de fondo */
   .main-content-wrap, 
   .main-content, 
   .site-header, 
   .side-bar,
-  .main-header {
+  .main-header,
+  .site-footer,
+  .navigation-list,
+  .nav-list-item {
     background: transparent !important;
+    background-color: transparent !important;
   }
 
-  /* 2. Aplicamos el fondo al HTML y Body */
+  /* 2. Configuración del Fondo en la capa más profunda */
   html, body {
-    height: 100%;
-    background-color: #111 !important; /* Color de respaldo */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Color oscuro de respaldo por si la imagen tarda en cargar */
+    background-color: #000 !important; 
   }
 
   body {
@@ -26,41 +33,32 @@ nav_order: 1
                       url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070') !important;
     background-size: cover !important;
     background-position: center !important;
-    background-attachment: fixed !important;
-    margin: 0;
+    background-attachment: fixed !important; /* Mantiene el fondo quieto al hacer scroll */
+    background-repeat: no-repeat !important;
   }
 
-  /* 3. Ajuste de textos para legibilidad */
-  .main-content h1, .main-content h2, .main-content h3, .main-content p, .main-content li {
-    color: white !important;
+  /* 3. Estilos de Texto para alta visibilidad */
+  .main-content h1, .main-content h2, .main-content h3, 
+  .main-content p, .main-content li, .main-content label {
+    color: #ffffff !important;
   }
-  
+
+  /* Color especial para el título principal */
   .main-content h1 {
     color: #00fbff !important;
-    text-align: center;
-    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   }
 
-  /* 4. Mosaico de Imágenes Responsivo */
-  .mosaico-horizontal {
-    display: flex !important;
-    flex-wrap: wrap; /* Para que en móvil se pongan una debajo de otra */
-    gap: 15px;
-    justify-content: center;
-    margin: 40px 0;
+  /* Ocultar elementos de navegación si quieres estilo 'Presentación' */
+  .side-bar, .site-footer {
+    display: none !important;
   }
-
-  .mosaico-horizontal img {
-    width: 45% !important;
-    min-width: 300px; /* Evita que sean demasiado pequeñas */
-    height: auto;
-    border: 3px solid #00fbff;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  
+  /* Ajustar el margen que deja la barra lateral al ocultarla */
+  .main-content-wrap {
+    margin-left: 0 !important;
+    padding: 2rem !important;
   }
-
-  /* Ocultar elementos que sobran en una presentación */
-  footer, .site-footer { display: none !important; }
 </style>
 
 # PRESENTACIÓN ERASMUS-VET 25-26
