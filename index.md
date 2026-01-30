@@ -80,6 +80,8 @@ nav_order: 1
 <div class="mosaico-horizontal">
   <img src="./images/IMG_20260113_093736.jpg" alt="Clase 1">
   <img src="./images/IMG_20260113_112640.jpg" alt="Clase 2">
+    <img src="./images/IMG_20260113_112640.jpg" alt="Clase 3">
+      <img src="./images/IMG_20260113_112640.jpg" alt="Clase 4">
 </div>
 
 ---
