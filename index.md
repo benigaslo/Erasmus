@@ -5,44 +5,62 @@ nav_order: 1
 ---
 
 <style>
-  /* Modificamos el contenedor principal de Just the Docs solo para esta página */
-  .main-content {
+  /* 1. Hacemos transparentes todos los contenedores de Just the Docs */
+  /* Esto elimina el fondo blanco que viene por defecto en la estructura */
+  .main-content-wrap, 
+  .main-content, 
+  .site-header, 
+  .side-bar,
+  .main-header {
+    background: transparent !important;
+  }
+
+  /* 2. Aplicamos el fondo al HTML y Body */
+  html, body {
+    height: 100%;
+    background-color: #111 !important; /* Color de respaldo */
+  }
+
+  body {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
                       url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070') !important;
     background-size: cover !important;
-    background-attachment: fixed;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    margin: 0;
+  }
+
+  /* 3. Ajuste de textos para legibilidad */
+  .main-content h1, .main-content h2, .main-content h3, .main-content p, .main-content li {
     color: white !important;
-    min-height: 100vh;
   }
-
-  /* Ajustamos los títulos para que se vean en el fondo oscuro */
-  .main-content h1, .main-content h2, .main-content h3 {
+  
+  .main-content h1 {
     color: #00fbff !important;
+    text-align: center;
+    text-transform: uppercase;
   }
 
-  /* Estilo de Mosaico de imágenes (Izquierda a Derecha) */
-  .mosaico-erasmus {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  /* 4. Mosaico de Imágenes Responsivo */
+  .mosaico-horizontal {
+    display: flex !important;
+    flex-wrap: wrap; /* Para que en móvil se pongan una debajo de otra */
+    gap: 15px;
     justify-content: center;
-    margin-top: 30px;
+    margin: 40px 0;
   }
 
-  .mosaico-erasmus img {
-    width: 45%; /* Dos imágenes por fila */
-    min-width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 4px solid #fff;
-    border-radius: 15px;
+  .mosaico-horizontal img {
+    width: 45% !important;
+    min-width: 300px; /* Evita que sean demasiado pequeñas */
+    height: auto;
+    border: 3px solid #00fbff;
+    border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    transition: transform 0.3s;
   }
 
-  .mosaico-erasmus img:hover {
-    transform: scale(1.05);
-  }
+  /* Ocultar elementos que sobran en una presentación */
+  footer, .site-footer { display: none !important; }
 </style>
 
 # PRESENTACIÓN ERASMUS-VET 25-26
@@ -50,25 +68,23 @@ nav_order: 1
 
 ---
 
-## DÍA 1: Llegada e Instituto
-Un comienzo emocionante en el **ISS Pertini Anelli Pinto**. Explorando las instalaciones y conociendo a nuestros anfitriones.
-
-<div class="mosaico-erasmus">
+### DÍA 1: Llegada al instituto ISS Pertini Anelli Pinto
+<div class="mosaico-horizontal">
   <img src="./images/IMG_20260113_091924.jpg" alt="Llegada">
   <img src="./images/IMG_20260113_092303.jpg" alt="Instituto">
 </div>
 
 ---
 
-## Inmersión Tecnológica
 ### Clase de informática - Prof. Vito Montanaro
-
-<div class="mosaico-erasmus">
+<div class="mosaico-horizontal">
   <img src="./images/IMG_20260113_093736.jpg" alt="Clase 1">
   <img src="./images/IMG_20260113_112640.jpg" alt="Clase 2">
 </div>
 
 ---
 
-### ¡Gracias por su atención!
-**Erasmus+ 2025-2026**
+<div style="text-align: center; margin-top: 100px; padding-bottom: 50px;">
+  <h1>¡Gracias por su atención!</h1>
+  <p>Erasmus+ 2025-2026</p>
+</div>
