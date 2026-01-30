@@ -84,6 +84,7 @@ Explorando las instalaciones y conociendo a nuestros anfitriones.
 <div class="mosaico-horizontal">
 
 ![alt text](./images/IMG_20260113_112640.jpg)
+
 ![alt text](./images/IMG_20260113_093736.jpg)
 
 </div>
