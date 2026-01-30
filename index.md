@@ -17,42 +17,28 @@ style: |
   h1 {
     color: #00fbff;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
-  .mosaic {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    align-items: center;
-  }
-  .mosaic img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 2px solid rgba(255,255,255,0.2);
-  }
-  .caption {
-    font-size: 0.6em;
-    color: #ccc;
-    margin-top: 5px;
-  }
-
-  /* Estilo para el mosaico horizontal */
+  /* Contenedor Flex para desplazamiento horizontal */
   .mosaico-horizontal {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+    width: 100%;
+    margin-top: 20px;
   }
-
+  /* Estilo de las imágenes del mosaico */
   .mosaico-horizontal img {
-    width: 400px; /* Ajusta el ancho según necesites */
-    height: 300px;
+    width: 450px; 
+    height: 350px;
     object-fit: cover;
     border: 3px solid #00d4ff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   }
-
+  
 ---
 
 # PRESENTACIÓN ERASMUS-VET 25-26
@@ -63,14 +49,13 @@ style: |
 ![bg left:45%](./images/IMG_20260113_091924.jpg)
 
 # DÍA 1
-
 ## Llegada al instituto
 **ISS Pertini Anelli Pinto**
 Un comienzo emocionante para la experiencia Erasmus.
 
 ---
 
-![bg opacity:.3](./images/IMG_20260113_092303.jpg)
+![bg opacity:.4](./images/IMG_20260113_092303.jpg)
 
 # El Instituto
 ### ISS Pertini Anelli Pinto
@@ -83,8 +68,8 @@ Explorando las instalaciones y conociendo a nuestros anfitriones.
 
 <div class="mosaico-horizontal">
 
-![alt text](images/IMG_20260113_093736.jpg)
-![alt text](images/IMG_20260113_112640.jpg)
+<img src="./images/IMG_20260113_093736.jpg" />
+<img src="./images/IMG_20260113_112640.jpg" />
 
 </div>
 
