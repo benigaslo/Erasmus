@@ -9,36 +9,36 @@ marp: true
 theme: uncover
 class: invert
 style: |
+  /* Forzamos el fondo en todas las diapositivas */
   section {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070');
-    background-size: cover;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  }
-  h1 {
-    color: #00fbff;
-    text-transform: uppercase;
-    font-size: 2.2em;
-  }
-  /* Contenedor Flex para desplazamiento horizontal */
-  .mosaico-horizontal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    margin-top: 20px;
-  }
-  /* Estilo de las imágenes del mosaico */
-  .mosaico-horizontal img {
-    width: 450px; 
-    height: 350px;
-    object-fit: cover;
-    border: 3px solid #00d4ff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                      url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070') !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
   
+  h1 {
+    color: #00fbff !important;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  }
+
+  /* Contenedor para imágenes de izquierda a derecha */
+  .mosaico-horizontal {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .mosaico-horizontal img {
+    width: 45% !important; /* Ocupan casi la mitad cada una */
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #00fbff;
+    border-radius: 10px;
+  }
+
 ---
 
 # PRESENTACIÓN ERASMUS-VET 25-26
