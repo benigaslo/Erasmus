@@ -29,7 +29,7 @@ nav_order: 1
   }
 
   body {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070') !important;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.consilium.europa.eu/media/54319/erasmus.png') !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important; /* Mantiene el fondo quieto al hacer scroll */
@@ -145,7 +145,6 @@ nav_order: 1
 
   <button class="nav-btn next" onclick="moveSlider(1, 'slider1')">❯</button>
 </div>
-
 ---
 
 <div style="text-align: center; margin-top: 100px; padding-bottom: 50px;">
