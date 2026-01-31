@@ -302,7 +302,7 @@ nav_order: 1
 
 ---
 
-# DÍA 5: 
+# **DÍA 5:** 
 ## Último día en Italia y visita por Turi
 <div class="slider-horizontal">
   <button class="boton-lateral" onclick="document.getElementById('carrusel9').scrollBy({left: -document.getElementById('carrusel9').offsetWidth, behavior: 'smooth'})">❮</button>
