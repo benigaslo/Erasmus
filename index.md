@@ -29,7 +29,7 @@ nav_order: 1
   }
 
   body {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://www.consilium.europa.eu/media/54319/erasmus.png') !important;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://www.consilium.europa.eu/media/54319/erasmus.png') !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important; /* Mantiene el fondo quieto al hacer scroll */
