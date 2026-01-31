@@ -145,6 +145,17 @@ nav_order: 1
 
   <button class="nav-btn next" onclick="moveSlider(1, 'slider1')">❯</button>
 </div>
+
+<script>
+  function moveSlider(direction, sliderId) {
+    const slider = document.getElementById(sliderId);
+    const scrollAmount = slider.clientWidth + 20; // Ancho de la imagen + gap
+    slider.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
 ---
 
 <div style="text-align: center; margin-top: 100px; padding-bottom: 50px;">
