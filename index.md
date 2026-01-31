@@ -29,7 +29,7 @@ nav_order: 1
   }
 
   body {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.consilium.europa.eu/media/54319/erasmus.png') !important;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://www.consilium.europa.eu/media/54319/erasmus.png') !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important; /* Mantiene el fondo quieto al hacer scroll */
@@ -152,8 +152,8 @@ nav_order: 1
 
 </style>
 
-# PRESENTACIÓN ERASMUS-VET 25-26
-## 🌍 TURI (ISS PERTINI ANELLI)
+# ERASMUS+VET 25-26
+## 🌍 LA PUGLIA (TURI + BARI + MONOPOLI + ALBEROBELLO + MATERA)
 
 ---
 
@@ -163,32 +163,94 @@ nav_order: 1
   <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: -document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❮</button>
 
   <div class="visor-fotos" id="carrusel">
-    <img src="./images/IMG_20260113_091924.jpg" alt="Llegada">
-    <img src="./images/IMG_20260113_092303.jpg" alt="Instituto">
-    <img src="./images/IMG_20260113_093736.jpg" alt="Clase 1">
-    <img src="./images/IMG_20260113_112640.jpg" alt="Clase 2">
+    <img src="./images/DIA 1/IMG_20260113_091924.jpg" alt="Llegada">
+    <img src="./images/DIA 1/IMG_20260113_092303.jpg" alt="Instituto">
+    <img src="./images/DIA 1/IMG_20260113_093736.jpg" alt="Clase 1">
+    <img src="./images/DIA 1/IMG_20260113_112640.jpg" alt="Clase 2">
   </div>
 
   <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❯</button>
 </div>
 
-## Grutas de la Castellana
+## Visita a las Grutas de la Castellana
 <div class="slider-horizontal">
   <button class="boton-lateral" onclick="document.getElementById('carrusel2').scrollBy({left: -document.getElementById('carrusel2').offsetWidth, behavior: 'smooth'})">❮</button>
 
   <div class="visor-fotos" id="carrusel2">
-    <img src="./images/IMG_20260113_162437.jpg" alt="Llegada">
-    <img src="./images/IMG_20260113_162741.jpg" alt="Instituto">
-    <img src="./images/IMG_20260113_164003.jpg" alt="Clase 1">
-    <img src="./images/IMG_20260113_170420.jpg" alt="Clase 2">
+    <img src="./images/DIA 1/IMG_20260113_162437.jpg" alt="Llegada">
+    <img src="./images/DIA 1/IMG_20260113_162741.jpg" alt="Instituto">
+    <img src="./images/DIA 1/IMG_20260113_164003.jpg" alt="Clase 1">
+    <img src="./images/DIA 1/IMG_20260113_170420.jpg" alt="Clase 2">
   </div>
 
-  <button class="boton-lateral" onclick="document.getElementById('carrusel2').scrollBy({left: document.getElementById('carrusel2').offsetWidth, behavior: 'smooth'})">❯</button>
+  <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+---
+
+# DÍA 2: 
+## Visita al instituto ISS Pertini Anelli Pinto
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel3').scrollBy({left: -document.getElementById('carrusel3').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel3">
+    <img src="./images/DIA 2/IMG_20260114_114941.jpg" alt="Instituto 1">
+    <img src="./images/DIA 2/IMG_20260114_121732.jpg" alt="Instituto 2">
+    <img src="./images/DIA 2/IMG_20260114_123308.jpg" alt="Instituto 3">
+    <img src="./images/DIA 2/IMG_20260114_123312.jpg" alt="Instituto 4">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel3').scrollBy({left: document.getElementById('carrusel3').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+## Visita al pueblo de Monopoli
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel4').scrollBy({left: -document.getElementById('carrusel4').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel4">
+    <img src="./images/DIA 2/IMG_20260114_153445.jpg" alt="Monopoli 1">
+    <img src="./images/DIA 2/IMG_20260114_154315.jpg" alt="Monopoli 2">
+    <img src="./images/DIA 2/IMG_20260114_154727.jpg" alt="Monopoli 3">
+    <img src="./images/DIA 2/IMG_20260114_161100.jpg" alt="Monopoli 4">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel4').scrollBy({left: document.getElementById('carrusel4').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+---
+
+# DÍA 3: 
+## Último día en el instituto ISS Pertini Anelli Pinto
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel5').scrollBy({left: -document.getElementById('carrusel5').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel5">
+    <img src="./images/DIA 3/IMG_20260115_110339.jpg" alt="Instituto 1">
+    <img src="./images/DIA 3/IMG_20260115_110334.jpg" alt="Instituto 2">
+    <img src="./images/DIA 3/IMG_20260115_105825.jpg" alt="Instituto 3">
+    <img src="./images/DIA 3/IMG_20260115_105917.jpg" alt="Instituto 4">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel5').scrollBy({left: document.getElementById('carrusel5').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+## Visita a la ciudad de Bari
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel6').scrollBy({left: -document.getElementById('carrusel6').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel6">
+    <img src="./images/DIA 3/IMG_20260115_143824.jpg" alt="Bari 1">
+    <img src="./images/DIA 3/IMG_20260115_155458.jpg" alt="Bari 2">
+    <img src="./images/DIA 3/IMG_20260115_162712.jpg" alt="Bari 3">
+    <img src="./images/DIA 3/IMG_20260115_172909.jpg" alt="Bari 4">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel6').scrollBy({left: document.getElementById('carrusel6').offsetWidth, behavior: 'smooth'})">❯</button>
 </div>
 
 ---
 
 <div style="text-align: center; margin-top: 100px; padding-bottom: 50px;">
-  <h1>¡Gracias por su atención!</h1>
-  <p>Erasmus+ 2025-2026</p>
+  <h1>¡Gracias por vuestra atención!</h1>
+  <p>Erasmus+VET 2025-2026</p>
 </div>
