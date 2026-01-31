@@ -25,7 +25,7 @@ nav_order: 1
     padding: 0;
     min-height: 100vh;
     /* Color oscuro de respaldo por si la imagen tarda en cargar */
-    background-color: #000 !important; 
+    background-color: #000000ff !important; 
   }
 
   body {
@@ -44,7 +44,7 @@ nav_order: 1
 
   /* Color especial para el título principal */
   .main-content h1 {
-    color: #00fbff !important;
+    color: #ff0000ff !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   }
 
@@ -83,7 +83,7 @@ nav_order: 1
     scroll-snap-align: center;
     width: 100%;
     height: auto;
-    border: 3px solid #00fbff;
+    border: 3px solid #ff0000ff;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 251, 255, 0.3);
     object-fit: cover;
@@ -108,7 +108,7 @@ nav_order: 1
     scroll-snap-type: x mandatory;
     width: 80%; /* Ajusta esto para cambiar el ancho de las fotos */
     max-width: 800px;
-    border: 3px solid #00fbff;
+    border: 3px solid #ff0000ff;
     border-radius: 15px;
     background: rgba(0,0,0,0.4);
     box-shadow: 0 10px 30px rgba(0, 251, 255, 0.2);
@@ -126,8 +126,8 @@ nav_order: 1
   /* Estilo de los botones laterales */
   .boton-lateral {
     background: none;
-    border: 2px solid #00fbff;
-    color: #00fbff;
+    border: 2px solid #ff0000ff;
+    color: #ff0000ff;
     font-size: 24px;
     font-weight: bold;
     padding: 15px 20px;
@@ -138,9 +138,9 @@ nav_order: 1
   }
 
   .boton-lateral:hover {
-    background: #00fbff;
+    background: #ff0000ff;
     color: #000;
-    box-shadow: 0 0 15px #00fbff;
+    box-shadow: 0 0 15px #ff0000ff;
   }
 
   /* Ocultar en móviles si el espacio es muy pequeño */
@@ -246,6 +246,54 @@ nav_order: 1
   </div>
 
   <button class="boton-lateral" onclick="document.getElementById('carrusel6').scrollBy({left: document.getElementById('carrusel6').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+---
+
+# DÍA 4: 
+## Visita a Alberobello
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel7').scrollBy({left: -document.getElementById('carrusel7').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel7">
+    <img src="./images/DIA 4/IMG_20260116_095251.jpg" alt="Alberobello 1">
+    <img src="./images/DIA 4/IMG_20260116_102348.jpg" alt="Alberobello 2">
+    <img src="./images/DIA 4/IMG_20260116_102711.jpg" alt="Alberobello 3">
+    <img src="./images/DIA 4/IMG_20260116_102958.jpg" alt="Alberobello 4">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel7').scrollBy({left: document.getElementById('carrusel7').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+## Visita a Matera
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel8').scrollBy({left: -document.getElementById('carrusel8').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel8">
+    <img src="./images/DIA 4/IMG_20260116_144629.jpg" alt="Matera 1">
+    <img src="./images/DIA 4/IMG_20260116_155335.jpg" alt="Matera 2">
+    <img src="./images/DIA 4/IMG_20260116_162445.jpg" alt="Matera 3">
+    <img src="./images/DIA 4/IMG_20260116_163129.jpg" alt="Matera 4">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel8').scrollBy({left: document.getElementById('carrusel8').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+---
+
+# DÍA 5: 
+## Último día en Italia y visita por Turi
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel9').scrollBy({left: -document.getElementById('carrusel9').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel9">
+    <img src="./images/DIA 5/IMG_20260117_100231.jpg" alt="Turi 1">
+    <img src="./images/DIA 5/IMG_20260117_100246.jpg" alt="Turi 2">
+    <img src="./images/DIA 5/IMG_20260117_100800.jpg" alt="Turi 3">
+    <img src="./images/DIA 5/IMG_20260117_101053.jpg" alt="Turi 4">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel9').scrollBy({left: document.getElementById('carrusel9').offsetWidth, behavior: 'smooth'})">❯</button>
 </div>
 
 ---
