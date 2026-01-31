@@ -89,32 +89,65 @@ nav_order: 1
     object-fit: cover;
   }
 
-  /* --- Botones de Navegación --- */
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 251, 255, 0.2);
-    border: 2px solid #00fbff;
-    color: white;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 50%;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
-    z-index: 10;
+/* La tira de imágenes */
+/* Contenedor principal: usamos Flex para alinear [Botón][Imagen][Botón] */
+  .slider-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+    width: 100%;
   }
 
-  .nav-btn:hover { background: #00fbff; color: #000; }
-  .prev { left: -60px; }
-  .next { right: -60px; }
+  /* El marco donde se ven las fotos */
+  .visor-fotos {
+    display: flex;
+    overflow: hidden; /* Escondemos el resto de fotos */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    width: 80%; /* Ajusta esto para cambiar el ancho de las fotos */
+    max-width: 800px;
+    border: 3px solid #00fbff;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 10px 30px rgba(0, 251, 255, 0.2);
+  }
 
-  /* Ajuste para móviles */
-  @media (max-width: 768px) {
-    .prev { left: 10px; }
-    .next { right: 10px; }
-    .nav-btn { padding: 10px; font-size: 18px; }
+  .visor-fotos img {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    width: 100%;
+    height: 450px; /* Altura fija para consistencia */
+    object-fit: contain; /* Evita que la foto se corte */
+    padding: 10px;
+  }
+
+  /* Estilo de los botones laterales */
+  .boton-lateral {
+    background: none;
+    border: 2px solid #00fbff;
+    color: #00fbff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* Evita que el botón se aplaste */
+  }
+
+  .boton-lateral:hover {
+    background: #00fbff;
+    color: #000;
+    box-shadow: 0 0 15px #00fbff;
+  }
+
+  /* Ocultar en móviles si el espacio es muy pequeño */
+  @media (max-width: 600px) {
+    .slider-horizontal { gap: 5px; }
+    .boton-lateral { padding: 10px; font-size: 18px; }
+    .visor-fotos { width: 100%; }
   }
 
 </style>
@@ -133,29 +166,19 @@ nav_order: 1
 ---
 
 ### Clase de informática - Prof. Vito Montanaro
-<div class="slider-wrapper">
-  <button class="nav-btn prev" onclick="moveSlider(-1, 'slider1')">❮</button>
-  
-  <div class="slider" id="slider1">
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: -document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel">
     <img src="./images/IMG_20260113_091924.jpg" alt="Llegada">
     <img src="./images/IMG_20260113_092303.jpg" alt="Instituto">
     <img src="./images/IMG_20260113_093736.jpg" alt="Clase 1">
     <img src="./images/IMG_20260113_112640.jpg" alt="Clase 2">
   </div>
 
-  <button class="nav-btn next" onclick="moveSlider(1, 'slider1')">❯</button>
+  <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❯</button>
 </div>
 
-<script>
-  function moveSlider(direction, sliderId) {
-    const slider = document.getElementById(sliderId);
-    const scrollAmount = slider.clientWidth + 20; // Ancho de la imagen + gap
-    slider.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
-    });
-  }
-</script>
 ---
 
 <div style="text-align: center; margin-top: 100px; padding-bottom: 50px;">
