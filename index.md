@@ -54,12 +54,33 @@ nav_order: 1
   }
   
   /* Ajustar el margen que deja la barra lateral al ocultarla */
-  .main-content-wrap {
+  /*.main-content-wrap {
     margin-left: 0 !important;
     padding: 2rem !important;
+  }*/
+  /* ------------------------------------------------------ */
+  /* 1. Eliminamos los límites de ancho y márgenes del tema */
+  .main-content-wrap {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important; /* Quitamos paddings excesivos */
   }
 
-/* --- Estilos del Slider --- */
+  .main-content {
+    max-width: 100% !important; /* Permite que el contenido use todo el ancho */
+    padding: 2rem !important;    /* Un pequeño respiro para que no toque los bordes */
+    margin: 0 auto !important;   /* Centra el bloque */
+  }
+
+  /* 2. Aseguramos que los sliders no se desborden y se vean centrados */
+ .slider-horizontal {
+    width: 100%;
+    max-width: 1000px; /* O el ancho máximo que prefieras para tus fotos */
+    margin: 40px auto !important; /* Centra el slider horizontalmente */
+  }
+  /* ------------------------------------------------------ */
+  
+  /* --- Estilos del Slider --- */
   .slider-wrapper {
     position: relative;
     max-width: 900px;
@@ -177,13 +198,13 @@ nav_order: 1
   <button class="boton-lateral" onclick="document.getElementById('carrusel2').scrollBy({left: -document.getElementById('carrusel2').offsetWidth, behavior: 'smooth'})">❮</button>
 
   <div class="visor-fotos" id="carrusel2">
-    <img src="./images/DIA 1/IMG_20260113_162437.jpg" alt="Llegada">
-    <img src="./images/DIA 1/IMG_20260113_162741.jpg" alt="Instituto">
-    <img src="./images/DIA 1/IMG_20260113_164003.jpg" alt="Clase 1">
-    <img src="./images/DIA 1/IMG_20260113_170420.jpg" alt="Clase 2">
+    <img src="./images/DIA 1/IMG_20260113_162437.jpg" alt="Grutas 1">
+    <img src="./images/DIA 1/IMG_20260113_162741.jpg" alt="Grutas 2">
+    <img src="./images/DIA 1/IMG_20260113_164003.jpg" alt="Grutas 3">
+    <img src="./images/DIA 1/IMG_20260113_170420.jpg" alt="Grutas 4">
   </div>
 
-  <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❯</button>
+  <button class="boton-lateral" onclick="document.getElementById('carrusel2').scrollBy({left: document.getElementById('carrusel2').offsetWidth, behavior: 'smooth'})">❯</button>
 </div>
 
 ---
