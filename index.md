@@ -54,10 +54,10 @@ nav_order: 1
   }
   
   /* Ajustar el margen que deja la barra lateral al ocultarla */
-  .main-content-wrap {
+  /*.main-content-wrap {
     margin-left: 0 !important;
     padding: 2rem !important;
-  }
+  }*/
   /* ------------------------------------------------------ */
   /* 1. Eliminamos los límites de ancho y márgenes del tema */
   .main-content-wrap {
