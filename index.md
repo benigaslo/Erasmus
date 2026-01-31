@@ -29,7 +29,7 @@ nav_order: 1
   }
 
   body {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://www.consilium.europa.eu/media/54319/erasmus.png') !important;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://www.consilium.europa.eu/media/54319/erasmus.png') !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important; /* Mantiene el fondo quieto al hacer scroll */
@@ -79,7 +79,7 @@ nav_order: 1
     margin: 40px auto !important; /* Centra el slider horizontalmente */
   }
   /* ------------------------------------------------------ */
-  
+
   /* --- Estilos del Slider --- */
   .slider-wrapper {
     position: relative;
@@ -178,7 +178,7 @@ nav_order: 1
 
 ---
 
-# DÍA 1: 
+# **DÍA 1**: 
 ## Llegada al instituto ISS Pertini Anelli Pinto
 <div class="slider-horizontal">
   <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: -document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❮</button>
@@ -209,7 +209,7 @@ nav_order: 1
 
 ---
 
-# DÍA 2: 
+# **DÍA 2**: 
 ## Visita al instituto ISS Pertini Anelli Pinto
 <div class="slider-horizontal">
   <button class="boton-lateral" onclick="document.getElementById('carrusel3').scrollBy({left: -document.getElementById('carrusel3').offsetWidth, behavior: 'smooth'})">❮</button>
@@ -240,7 +240,7 @@ nav_order: 1
 
 ---
 
-# DÍA 3: 
+# **DÍA 3**: 
 ## Último día en el instituto ISS Pertini Anelli Pinto
 <div class="slider-horizontal">
   <button class="boton-lateral" onclick="document.getElementById('carrusel5').scrollBy({left: -document.getElementById('carrusel5').offsetWidth, behavior: 'smooth'})">❮</button>
@@ -271,7 +271,7 @@ nav_order: 1
 
 ---
 
-# DÍA 4: 
+# **DÍA 4**: 
 ## Visita a Alberobello
 <div class="slider-horizontal">
   <button class="boton-lateral" onclick="document.getElementById('carrusel7').scrollBy({left: -document.getElementById('carrusel7').offsetWidth, behavior: 'smooth'})">❮</button>
