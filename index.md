@@ -157,15 +157,8 @@ nav_order: 1
 
 ---
 
-### DÍA 1: Llegada al instituto ISS Pertini Anelli Pinto
-<div class="mosaico-horizontal">
-  <img src="./images/IMG_20260113_091924.jpg" alt="Llegada">
-  <img src="./images/IMG_20260113_092303.jpg" alt="Instituto">
-</div>
-
----
-
-### Clase de informática - Prof. Vito Montanaro
+# DÍA 1: 
+## Llegada al instituto ISS Pertini Anelli Pinto
 <div class="slider-horizontal">
   <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: -document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❮</button>
 
@@ -177,6 +170,20 @@ nav_order: 1
   </div>
 
   <button class="boton-lateral" onclick="document.getElementById('carrusel').scrollBy({left: document.getElementById('carrusel').offsetWidth, behavior: 'smooth'})">❯</button>
+</div>
+
+## Grutas de la Castellana
+<div class="slider-horizontal">
+  <button class="boton-lateral" onclick="document.getElementById('carrusel2').scrollBy({left: -document.getElementById('carrusel2').offsetWidth, behavior: 'smooth'})">❮</button>
+
+  <div class="visor-fotos" id="carrusel2">
+    <img src="./images/IMG_20260113_162437.jpg" alt="Llegada">
+    <img src="./images/IMG_20260113_162741.jpg" alt="Instituto">
+    <img src="./images/IMG_20260113_164003.jpg" alt="Clase 1">
+    <img src="./images/IMG_20260113_170420.jpg" alt="Clase 2">
+  </div>
+
+  <button class="boton-lateral" onclick="document.getElementById('carrusel2').scrollBy({left: document.getElementById('carrusel2').offsetWidth, behavior: 'smooth'})">❯</button>
 </div>
 
 ---
