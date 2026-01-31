@@ -54,30 +54,30 @@ nav_order: 1
   }
   
   /* Ajustar el margen que deja la barra lateral al ocultarla */
-  /*.main-content-wrap {
-    margin-left: 0 !important;
-    padding: 2rem !important;
-  }*/
-  /* ------------------------------------------------------ */
-  /* 1. Eliminamos los límites de ancho y márgenes del tema */
   .main-content-wrap {
     margin-left: 0 !important;
+    padding: 2rem !important;
+  }
+  /* ------------------------------------------------------ */
+  /* 1. Eliminamos los límites de ancho y márgenes del tema */
+  /*.main-content-wrap {
+    margin-left: 0 !important;
     max-width: 100% !important;
-    padding: 0 !important; /* Quitamos paddings excesivos */
-  }
+    padding: 0 !important;
+  }*/
 
-  .main-content {
-    max-width: 100% !important; /* Permite que el contenido use todo el ancho */
-    padding: 2rem !important;    /* Un pequeño respiro para que no toque los bordes */
-    margin: 0 auto !important;   /* Centra el bloque */
-  }
+  /*.main-content {
+    max-width: 100% !important; 
+    padding: 2rem !important;    
+    margin: 0 auto !important;   
+  }*/
 
   /* 2. Aseguramos que los sliders no se desborden y se vean centrados */
- .slider-horizontal {
+  /*.slider-horizontal {
     width: 100%;
-    max-width: 1000px; /* O el ancho máximo que prefieras para tus fotos */
-    margin: 40px auto !important; /* Centra el slider horizontalmente */
-  }
+    max-width: 1000px; 
+    margin: 40px auto !important; 
+  }*/
   /* ------------------------------------------------------ */
 
   /* --- Estilos del Slider --- */
